@@ -1,0 +1,111 @@
+
+\documentclass[letterpaper,12pt,]{article}
+
+\usepackage{titling}
+
+\setlength{\droptitle}{5in}   % This is your set screw
+
+\usepackage[%
+    left=1in,%
+    right=1in,%
+    top=1in,%
+    bottom=1.0in,%
+    paperheight=11in,%
+    paperwidth=8.5in%
+]{geometry}%
+\usepackage{comment}
+
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[section]{placeins}
+\usepackage[font=small,skip=-2pt]{caption}
+\usepackage{subcaption}
+\usepackage{hyperref}
+\lstdefinestyle{mystyle}{
+    %backgroundcolor=\color{backcolour},   
+    %commentstyle=\color{codegreen},
+    %keywordstyle=\color{magenta},
+    %numberstyle=\tiny\color{codegray},
+    %stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numberstyle=\footnotesize,               
+    stepnumber=1,
+    numbersep=5pt,
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2,
+    frame=single
+}
+\lstset{frame=single}
+
+%\pagestyle{empty} % Remove page numbering
+\linespread{2.0} % Line Spacing
+
+\begin{document}
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+
+
+\textsc{\LARGE McGill University}\\[3.5cm]
+\textsc{\Large Subsonic Aerodynamics}\\[0.5cm] 
+\textsc{\large MECH 533}\\[2.5cm]
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+{ \huge \bfseries Final Project}\\[1.5cm] % Title of your document
+
+\HRule \\[0.4cm]
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Name:}\\
+Doug \textsc{Shi-Dong} % Your name
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Student ID:} \\
+260466662\\
+\end{flushright}
+\end{minipage}\\[4cm]
+
+\vfill{}
+{\large December 3, 2015}\\[2cm]
+
+\end{titlepage}
+
+\newcommand{\rn}{Reynolds-number}
+
+\section{Fundamentals of Fluid Mechanics}
+
+As the fluid flows around the airfoil, there will be sections where the pressure is lower than than the far-field static pressure. These sections occur more frequently on the suction surface where flow is accelerated. This decreased pressure then has to increase back up to the far-field static pressure when it reaches the trailing edge. Therefore, there is the presence of an adverse pressure gradient along the surface. The adverse pressure gradient is the cause of flow separation, which greatly impairs the lifting properties of the airfoil.
+
+In the lowest \rn range (below 30,000), the boundary layer stays mostly laminar. 
+
+
+%\section*{Codes}
+%
+%All codes are available on my GitHub:
+%
+%\url{https://github.com/dougshidong/math578/tree/master/a4a5}
+\end{document}
