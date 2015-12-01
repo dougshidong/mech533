@@ -94,13 +94,23 @@ Doug \textsc{Shi-Dong} % Your name
 
 \end{titlepage}
 
-\newcommand{\rn}{Reynolds-number}
+\newcommand{\rn}{Reynolds-number }
 
 \section{Fundamentals of Fluid Mechanics}
 
 As the fluid flows around the airfoil, there will be sections where the pressure is lower than than the far-field static pressure. These sections occur more frequently on the suction surface where flow is accelerated. This decreased pressure then has to increase back up to the far-field static pressure when it reaches the trailing edge. Therefore, there is the presence of an adverse pressure gradient along the surface. The adverse pressure gradient is the cause of flow separation, which greatly impairs the lifting properties of the airfoil.
 
-In the lowest \rn range (below 30,000), the boundary layer stays mostly laminar. 
+In the lowest \rn range (below 30,000), the boundary layer is mostly laminar. Laminar flow is less resistant to flow separation due to adverse pressure gradients. Once separated, it quickly transitions into turbulent flow, which can then reattach itself as a turbulent boundary layer. This behavior creates a laminar separation bubble.
+
+However, a \rn of 50,000 based on the separation bubble length is required for the flow to reattach. Therefore, airfoils with a chord resulting in a \rn less than 50,000 is too short for reattachment. This number supports the fact that there is a significant increase in performance at the critical \rn of 70,000.
+
+At \rn of 100,000, the bubble can extend 20-30\% of the airfoil, changing the effective shape of the airfoil. For higher \rn, the bubble will shrink down to a few percent of the chord. However, increasing the angle of attack will create greater adverse pressure gradients. As a result, the small bubble can burst and form a longer bubble. This loss of efficiency cannot be immediately recovered by lowering the angle of attack, creating a hysteresis behavior.
+
+When the \rn reaches 200,000, the laminar bubble can usually be avoided by letting the pressure recovery occur when the flow has become turbulent. Nonetheless, efficiency can further be improved by increasing the turbulent boundary layer's resistance to separation.
+
+For \rn above 1,000,000, laminar separation is rarely an issue. Efficiency is now gained by decreasing skin friction drag due to viscous effects in the boundary layer. An ideal airfoil would therefore have just enough separation resistance without the cost of adding too much skin friction drag.
+
+It is important to note that the separation behavior depends on the local boundary layer \rn. Therefore, it is still possible for laminar separation to occur for very high \rn.
 
 
 %\section*{Codes}
