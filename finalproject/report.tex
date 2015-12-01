@@ -96,6 +96,10 @@ Doug \textsc{Shi-Dong} % Your name
 
 \newcommand{\rn}{Reynolds-number }
 
+\section{Introduction}
+
+The study of low \rn airfoils allows us to understand the underlying processes that create performance differences. The ideal airfoil shape is greatly dependent on the 
+
 \section{Fundamentals of Fluid Mechanics}
 
 As the fluid flows around the airfoil, there will be sections where the pressure is lower than than the far-field static pressure. These sections occur more frequently on the suction surface where flow is accelerated. This decreased pressure then has to increase back up to the far-field static pressure when it reaches the trailing edge. Therefore, there is the presence of an adverse pressure gradient along the surface. The adverse pressure gradient is the cause of flow separation, which greatly impairs the lifting properties of the airfoil.
@@ -110,10 +114,39 @@ When the \rn reaches 200,000, the laminar bubble can usually be avoided by letti
 
 For \rn above 1,000,000, laminar separation is rarely an issue. Efficiency is now gained by decreasing skin friction drag due to viscous effects in the boundary layer. An ideal airfoil would therefore have just enough separation resistance without the cost of adding too much skin friction drag.
 
-It is important to note that the separation behavior depends on the local boundary layer \rn. Therefore, it is still possible for laminar separation to occur for very high \rn.
+It is important to note that the separation behavior depends on the local boundary layer \rn. Therefore, it is still possible for laminar separation to occur for very high \rn e.g. thin airfoils with small nose at high angle of attack.
 
+Since turbulent boundary layers are more resistant to separation than laminar ones, it is sometimes desirable to artificially accelerate transition. This can be done mechanically through surface roughness or even vibrations. It is hard to properly design turbulators since they only need to create enough turbulence to keep the boundary layer from separating.
 
-%\section*{Codes}
+\section{Experimental Testing of Airfoils}
+
+Multiple issues arise when it comes to experimental testing of airfoils. Correlating lift and drag is difficult due to the different in orders of magnitude of around 100. Furthermore, stall and separation are usually the regions of interest, but they are also the regions where small changes lead to big differences.
+
+Windtunnel results often suffer from the wall effects. The walls lead to an internal flow problem as opposed external. Also, the boundary layer from the walls may affect the flow around the airfoil.
+
+Free-flight testing allows to eleminate wall effects. However, it becomes hard to determine the performance of the airfoil only since three-dimensional effects and non-airfoil parts both affect the performance.
+
+Therefore, experimental results often show inconsistencies from one test to another, which makes it hard for designers to rely upon them.
+
+\section{Theoretical Design of Airfoils}
+
+Although low \rn airfoils may operate at high Mach numbers where compressibility effects are significant and may be used in applications where three-dimensional effects are not negligible, we only consider two-dimensional incompressible flows. The reason for this, is that two-dimensional inviscid flows are very well understood.
+
+Using complex analysis and conformal transformations, it is possible to derive exact analytical solutions of the flow field around the airfoil. Furthermore, the solution can be computed very quickly with computers. As long as the boundary layer stays attached, the solution gives a decent approximation of the airfoil performance. 
+
+For high \rn (above 1,000,000), lift and drag can be calculated with high precision as long as there is no separation. As previously mentioned, separation may occur if the adverse pressure gradient increases faster than the resistance to separation. Since transition usually occurs near the minimum pressure point, it is possible to avoid the early separation by carefully designing the airfoil in that section to reduce the adverse pressure gradient.
+
+Design procedures can be direct or inverse. The direct procedure finds the flow field solution of a given airfoil, whereas the inverse procedure finds the airfoil shape given a pressure field. These methods are valid for attached flow with a \rn under 300,000. For lower \rn, where laminar separation and bubble occur, there are no generally accepted methods to calculated those peculiar phenomena.
+
+\section{Special-Purpose Airfoils}
+
+Depending on the design requirements, the airfoil shape may take very different forms. For example given an upper surface geometry and a desired lift, the pressure distribution can be defined. Inverting the pressure field allows to find the full airfoil shape, as it was the case for the BoAR 80. Another example is the Lissaman-Hibbs 8025 that required a flat upper surface for the solar cells it carried. Knowing desirable features of the pressure field and how the shape affects it allows the designers to create a nose section and undersurface that will meet the required lift and drag coefficients.
+
+\section{Conclusion}
+
+The study of low \rn airfoils can now explain the difference in performance as a result of transition, separation and reattachment. We currently understand these processes qualitatively.
+
+%\since small changes can bring both benefits and disadvantages.section*{Codes}
 %
 %All codes are available on my GitHub:
 %
