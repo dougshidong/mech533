@@ -107,14 +107,14 @@ Doug \textsc{Shi-Dong} % Your name
 
 The study of low \rn airfoils allows us to understand the underlying processes that create performance differences. The ideal airfoil shape will vary depending on its size, the speed at which it is travelling and the medium it is travelling in. The scaling effect is defined by the \rn $Re = Vc/\nu$, where $V$ is the flight speed, $c$ is the chord, and $\nu$ is the kinematic viscosity. It is a ratio of the inertial effects to the viscous effects.
 
-The performance of the airfoil is quantified by the lift $C_L$ and drag coeffiecients $C_D$. Its effectiveness can therefore be defined by the ratio $C_L/C_D$. At the critical \rn of 70,000 for a smooth airfoil, we can see a dramatic improvement of effectiveness. In the following sections, it will be shown that as the \rn increases, the lift to drag ratio improves. 
+The performance of an airfoil is quantified by the lift and drag coefficients $C_L$ and $C_D$. Its effectiveness can therefore be defined by the ratio $C_L/C_D$. At the critical \rn of 70,000 for a smooth airfoil, we can see a dramatic improvement of effectiveness. In the following sections, it will be shown that as the \rn increases, the lift to drag ratio improves. 
 \section{Fundamentals of Fluid Mechanics}
 
-As the fluid flows around the airfoil, there will be sections where the pressure is lower than than the far-field static pressure. This decreased pressure then has to increase back up to the far-field static pressure when it reaches the trailing edge. Therefore, there is the presence of an adverse pressure gradient along the surface. The adverse pressure gradient is the cause of flow separation, which greatly impairs the lifting properties of the airfoil.
+As the fluid flows around the airfoil, there will be sections where the pressure is lower than than the far-field static pressure. This decreased pressure then has to increase back up to the far-field static pressure when it reaches the trailing edge also known as recovery. Therefore, there is the presence of an adverse pressure gradient along the surface. The adverse pressure gradient is the cause of flow separation, which greatly impairs the lifting properties of the airfoil.
 
 In the lowest \rn range (below 30,000), the boundary layer is mostly laminar. Laminar flow is less resistant to flow separation due to adverse pressure gradients. Once separated, it quickly transitions into turbulent flow, which can then reattach itself as a turbulent boundary layer. This behavior creates a laminar separation bubble.
 
-However, a \rn of 50,000 based on the separation bubble length is required for the flow to reattach. Therefore, airfoils with a chord resulting in a \rn less than 50,000 is too short for reattachment. This number supports the fact that there is a significant increase in performance at the critical \rn of 70,000.
+However, a \rn of 50,000 based on the separation bubble length is required for the flow to reattach. Therefore, airfoils with a chord resulting in a \rn less than 50,000 are too short for reattachment. This number supports the fact that there is a significant increase in performance at the critical \rn of 70,000.
 
 At \rn of 100,000, the bubble can extend 20-30\% of the airfoil, changing the effective shape of the airfoil. For higher \rn, the bubble will shrink down to a few percent of the chord. However, increasing the angle of attack will create greater adverse pressure gradients. As a result, the small bubble can burst and form a longer bubble. This loss of efficiency cannot be immediately recovered by lowering the angle of attack, creating a hysteresis behavior.
 
@@ -122,7 +122,9 @@ When the \rn reaches 200,000, the laminar bubble can usually be avoided by letti
 
 It is important to note that the separation behavior depends on the local boundary layer \rn. Therefore, it is still possible for laminar separation to occur for very high \rn e.g. thin airfoils with small nose at high angle of attack.
 
-Since turbulent boundary layers are more resistant to separation than laminar ones, it is sometimes desirable to artificially accelerate transition. This can be done mechanically through surface roughness or even vibrations. It is hard to properly design turbulators since they only need to create enough turbulence to keep the boundary layer from separating.
+Since turbulent boundary layers are more resistant to separation than laminar ones, it is sometimes desirable to artificially accelerate transition. This can be done mechanically through surface roughness or even vibrations. 
+
+%It is hard to properly design turbulators since they only need to create enough turbulence to keep the boundary layer from separating.
 
 \section{Experimental Testing of Airfoils}
 
@@ -135,7 +137,7 @@ Therefore, experimental results often show inconsistencies from one test to anot
 
 \section{Theoretical Design of Airfoils}
 
-Although low \rn airfoils may operate at high Mach numbers where compressibility effects are significant and may be used in applications where three-dimensional effects are not negligible, we only consider two-dimensional incompressible flows. The reason for this, is that two-dimensional inviscid flows are very well understood.
+Although low \rn airfoils may operate at high Mach numbers where compressibility effects are significant and may be used in applications where three-dimensional effects are not negligible, we only consider two-dimensional incompressible flows since they very well understood.
 
 Using complex analysis and conformal transformations, it is possible to derive exact analytical solutions of the flow field around the airfoil. Furthermore, the solution can be computed very quickly with computers. As long as the boundary layer stays attached, the solution gives a decent approximation of the airfoil performance. 
 
